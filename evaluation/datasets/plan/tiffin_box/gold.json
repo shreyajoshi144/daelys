@@ -1,0 +1,18 @@
+{
+  "draft": true,
+  "items": [
+    {"title": "Build subscription checkout with Razorpay", "lane": "Engineering"},
+    {"title": "Build delivery slot picker", "lane": "Engineering"},
+    {"title": "Send out-for-delivery push notifications", "lane": "Engineering"},
+    {"title": "Weekly menu CSV import for kitchen admins", "lane": "Engineering"},
+    {"title": "Write pricing page and copy", "lane": "Marketing"},
+    {"title": "Launch email sequence", "lane": "Marketing"},
+    {"title": "Write the FAQ page", "lane": "Marketing"},
+    {"title": "Onboarding survey for dietary preferences", "lane": "Product"},
+    {"title": "Define referral program rules", "lane": "Product"}
+  ],
+  "dependencies": [
+    ["Launch email sequence", "Build subscription checkout with Razorpay"]
+  ],
+  "contradiction": {"quotes": ["Friday 20 March", "27 March"]}
+}

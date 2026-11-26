@@ -1,0 +1,12 @@
+# Normalise line endings (shell scripts, SQL and Python must stay LF inside Linux containers).
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+
+# Keep the language stats and diffs about the code that was written here.
+web/vendor/** linguist-vendored -diff
+requirements*.lock linguist-generated
+evaluation/results/** linguist-generated

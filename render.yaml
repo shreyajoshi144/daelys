@@ -1,0 +1,76 @@
+# Render blueprint: api (web) + worker from the same image, Render Key Value for Redis, Neon Postgres (external).
+# Secrets are `sync: false`: Render asks for them on first deploy. See docs/ONBOARDING.md for the full checklist.
+services:
+  - type: web
+    name: daelys-api
+    runtime: docker
+    plan: standard            # 2 GB RAM. The image is built without dev tools or the audio stack (Dockerfile defaults)
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    preDeployCommand: alembic upgrade head
+    envVars:
+      - key: DATABASE_URL           # Neon owner connection (migrations): postgresql+asyncpg://...?ssl=require
+        sync: false
+      - key: APP_DATABASE_URL       # Neon connection as daelys_app (never the owner)
+        sync: false
+      - key: DAELYS_APP_PASSWORD
+        sync: false
+      - key: REDIS_URL
+        fromService: { type: keyvalue, name: daelys-redis, property: connectionString }
+      - key: JWT_SECRET
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: VOYAGE_API_KEY
+        sync: false
+      - key: GITHUB_WEBHOOK_SECRET
+        sync: false
+      - key: GITHUB_APP_ID
+        sync: false
+      - key: GITHUB_APP_PRIVATE_KEY_PATH   # e.g. /etc/secrets/github-app.pem (Render secret file)
+        sync: false
+      - key: SMTP_HOST                     # a real SMTP relay in production; leave empty to disable notify
+        sync: false
+      - key: LOG_LEVEL
+        value: INFO
+      - key: FORWARDED_ALLOW_IPS     # trust Render's load balancer for X-Forwarded-For (per-IP login rate limit)
+        value: "*"
+    buildFilter:
+      paths: ["api/**", "core/**", "agents/**", "rules/**", "workers/**", "connectors/**", "migrations/**",
+              "web/**", "scenarios/**", "evaluation/**", "Dockerfile", "requirements*.lock"]
+
+  - type: worker
+    name: daelys-worker
+    runtime: docker
+    plan: standard
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    dockerCommand: arq workers.main.WorkerSettings
+    envVars:
+      - fromGroup: daelys-shared
+
+  - type: keyvalue
+    name: daelys-redis
+    plan: starter
+    ipAllowList: []            # only Render services can connect
+
+envVarGroups:
+  - name: daelys-shared        # copy the api's secret values here (Render cannot reference another service's secrets)
+    envVars:                   # no DATABASE_URL: only the api's pre-deploy migration uses owner credentials
+      - key: APP_DATABASE_URL
+        sync: false
+      - key: REDIS_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: GITHUB_APP_ID
+        sync: false
+      - key: GITHUB_APP_PRIVATE_KEY_PATH
+        sync: false
+      - key: SMTP_HOST
+        sync: false

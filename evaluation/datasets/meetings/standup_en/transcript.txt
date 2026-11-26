@@ -1,0 +1,9 @@
+[00:01] Meera: Morning. Quick round on the subscriptions launch.
+[00:12] Arjun: Checkout tests are still failing because the Razorpay sandbox keys expired.
+[00:30] Meera: Arjun, can you get new sandbox keys from finance by Friday?
+[00:38] Arjun: Yes, I'll chase them today.
+[00:50] Kavya: The slot picker is merged. I can take the menu CSV import next.
+[01:05] Meera: Great, Kavya owns CSV import, target Wednesday next week.
+[01:20] Priya: Pricing copy is final. I still need someone to write the launch FAQ.
+[01:31] Neha: I'll write the launch FAQ page by Thursday.
+[01:45] Meera: Decision: launch stays on 27 March.

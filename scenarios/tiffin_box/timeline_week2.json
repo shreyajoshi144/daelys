@@ -1,0 +1,444 @@
+{
+  "draft": true,
+  "week_start": "2026-03-09T00:00:00+05:30",
+  "events": [
+    {
+      "id": "w2-01",
+      "day": 0,
+      "time": "09:30",
+      "source": "calendar",
+      "type": "calendar.event_scheduled",
+      "payload": {
+        "title": "Weekly launch sync",
+        "starts_at": "2026-03-09T16:00:00+05:30"
+      }
+    },
+    {
+      "id": "w2-02",
+      "day": 0,
+      "time": "10:05",
+      "source": "github",
+      "type": "pr.synchronize",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        }
+      }
+    },
+    {
+      "id": "w2-03",
+      "day": 0,
+      "time": "10:07",
+      "source": "github",
+      "type": "ci.created",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "pending"
+        }
+      }
+    },
+    {
+      "id": "w2-04",
+      "day": 0,
+      "time": "10:31",
+      "source": "github",
+      "type": "ci.completed",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "failure"
+        },
+        "conclusion": "failure"
+      }
+    },
+    {
+      "id": "w2-05",
+      "day": 0,
+      "time": "10:40",
+      "source": "github",
+      "type": "pr.commented",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        },
+        "body": "Payment webhook tests failing: sandbox keys expired."
+      }
+    },
+    {
+      "id": "w2-06",
+      "day": 0,
+      "time": "14:00",
+      "source": "github",
+      "type": "issue.commented",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#12",
+      "payload": {
+        "fields": {
+          "kind": "issue"
+        },
+        "body": "Still waiting on Razorpay sandbox keys."
+      }
+    },
+    {
+      "id": "w2-07",
+      "day": 0,
+      "time": "16:20",
+      "source": "meeting",
+      "type": "blocker.mentioned",
+      "actor": "meera",
+      "subject": "gh:tiffin-box/tiffin-box-app#12",
+      "payload": {
+        "text": "Checkout is blocked on Razorpay sandbox keys from finance."
+      }
+    },
+    {
+      "id": "w2-08",
+      "day": 1,
+      "time": "09:45",
+      "source": "github",
+      "type": "ci.created",
+      "subject": "gh:tiffin-box/tiffin-box-app#23",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.lint": "pending"
+        }
+      }
+    },
+    {
+      "id": "w2-09",
+      "day": 1,
+      "time": "09:58",
+      "source": "github",
+      "type": "ci.completed",
+      "subject": "gh:tiffin-box/tiffin-box-app#23",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.lint": "failure"
+        },
+        "conclusion": "failure"
+      }
+    },
+    {
+      "id": "w2-10",
+      "day": 1,
+      "time": "11:30",
+      "source": "github",
+      "type": "issue.commented",
+      "actor": "priya",
+      "subject": "gh:tiffin-box/tiffin-box-app#16",
+      "payload": {
+        "fields": {
+          "kind": "issue"
+        },
+        "body": "Final price points approved by founders."
+      }
+    },
+    {
+      "id": "w2-11",
+      "day": 1,
+      "time": "12:00",
+      "source": "github",
+      "type": "issue.closed",
+      "actor": "priya",
+      "subject": "gh:tiffin-box/tiffin-box-app#16",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "w2-12",
+      "day": 1,
+      "time": "15:00",
+      "source": "github",
+      "type": "pr.opened",
+      "actor": "kavya-codes",
+      "subject": "gh:tiffin-box/tiffin-box-app#24",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "title": "Menu admin: CSV import",
+          "status": "in_review",
+          "owner_login": "kavya-codes",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/pull/24"
+        },
+        "links": [
+          "gh:tiffin-box/tiffin-box-app#15"
+        ],
+        "body": "Closes #15"
+      }
+    },
+    {
+      "id": "w2-13",
+      "day": 1,
+      "time": "15:02",
+      "source": "github",
+      "type": "ci.created",
+      "subject": "gh:tiffin-box/tiffin-box-app#24",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "pending"
+        }
+      }
+    },
+    {
+      "id": "w2-14",
+      "day": 1,
+      "time": "15:20",
+      "source": "github",
+      "type": "ci.completed",
+      "subject": "gh:tiffin-box/tiffin-box-app#24",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "success"
+        }
+      }
+    },
+    {
+      "id": "w2-15",
+      "day": 2,
+      "time": "10:00",
+      "source": "github",
+      "type": "pr.ready_for_review",
+      "actor": "vik-builds",
+      "subject": "gh:tiffin-box/tiffin-box-app#23",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "status": "in_review"
+        }
+      }
+    },
+    {
+      "id": "w2-16",
+      "day": 2,
+      "time": "10:02",
+      "source": "github",
+      "type": "ci.created",
+      "subject": "gh:tiffin-box/tiffin-box-app#23",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "pending"
+        }
+      }
+    },
+    {
+      "id": "w2-17",
+      "day": 2,
+      "time": "10:30",
+      "source": "github",
+      "type": "ci.completed",
+      "subject": "gh:tiffin-box/tiffin-box-app#23",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "failure"
+        },
+        "conclusion": "failure"
+      }
+    },
+    {
+      "id": "w2-18",
+      "day": 2,
+      "time": "13:00",
+      "source": "github",
+      "type": "issue.edited",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#19",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Referral program rules (v2)",
+          "due_at": "2026-03-20T18:00:00+05:30"
+        }
+      }
+    },
+    {
+      "id": "w2-19",
+      "day": 2,
+      "time": "16:00",
+      "source": "calendar",
+      "type": "calendar.event_scheduled",
+      "payload": {
+        "title": "Finance sync on payment keys",
+        "starts_at": "2026-03-12T12:00:00+05:30"
+      }
+    },
+    {
+      "id": "w2-20",
+      "day": 3,
+      "time": "11:00",
+      "source": "github",
+      "type": "pr.commented",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#24",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        },
+        "body": "LGTM, nice validation on bad rows."
+      }
+    },
+    {
+      "id": "w2-21",
+      "day": 3,
+      "time": "11:30",
+      "source": "github",
+      "type": "pr.merged",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#24",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "w2-22",
+      "day": 3,
+      "time": "11:31",
+      "source": "github",
+      "type": "issue.closed",
+      "actor": "kavya-codes",
+      "subject": "gh:tiffin-box/tiffin-box-app#15",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "w2-23",
+      "day": 3,
+      "time": "14:00",
+      "source": "github",
+      "type": "issue.commented",
+      "actor": "priya",
+      "subject": "gh:tiffin-box/tiffin-box-app#17",
+      "payload": {
+        "fields": {
+          "kind": "issue"
+        },
+        "body": "Holding the email sequence until checkout is live."
+      }
+    },
+    {
+      "id": "w2-24",
+      "day": 3,
+      "time": "17:10",
+      "source": "meeting",
+      "type": "blocker.mentioned",
+      "actor": "priya",
+      "subject": "gh:tiffin-box/tiffin-box-app#17",
+      "payload": {
+        "text": "Launch emails are held until checkout ships."
+      }
+    },
+    {
+      "id": "w2-25",
+      "day": 4,
+      "time": "09:40",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "neha",
+      "subject": "gh:tiffin-box/tiffin-box-app#20",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Launch FAQ page",
+          "status": "open",
+          "lane": "Marketing",
+          "owner_login": null,
+          "due_at": "2026-03-19T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/20"
+        }
+      }
+    },
+    {
+      "id": "w2-26",
+      "day": 4,
+      "time": "10:00",
+      "source": "github",
+      "type": "issue.commented",
+      "actor": "vik-builds",
+      "subject": "gh:tiffin-box/tiffin-box-app#14",
+      "payload": {
+        "fields": {
+          "kind": "issue"
+        },
+        "body": "Push service needs the APNs certificate. Who has the Apple account?"
+      }
+    },
+    {
+      "id": "w2-27",
+      "day": 4,
+      "time": "12:00",
+      "source": "calendar",
+      "type": "calendar.event_scheduled",
+      "payload": {
+        "title": "Launch go/no-go (moved)",
+        "starts_at": "2026-03-20T17:00:00+05:30"
+      }
+    },
+    {
+      "id": "w2-28",
+      "day": 4,
+      "time": "15:00",
+      "source": "github",
+      "type": "pr.commented",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        },
+        "body": "Rebased on main; still red on payment webhook tests."
+      }
+    },
+    {
+      "id": "w2-29",
+      "day": 4,
+      "time": "15:05",
+      "source": "github",
+      "type": "ci.created",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "pending"
+        }
+      }
+    },
+    {
+      "id": "w2-30",
+      "day": 4,
+      "time": "15:30",
+      "source": "github",
+      "type": "ci.completed",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "failure"
+        },
+        "conclusion": "failure"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_DB: daelys
+          POSTGRES_PASSWORD: ci-superuser
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d daelys" --health-interval 2s --health-timeout 3s --health-retries 30
+      mailpit:
+        image: axllent/mailpit:v1.27
+        ports: ["1025:1025", "8025:8025"]
+      redis:
+        image: redis:7-alpine
+        ports: ["6379:6379"]
+        options: --health-cmd "redis-cli ping" --health-interval 2s --health-timeout 3s --health-retries 30
+    env:
+      DATABASE_URL: postgresql+asyncpg://postgres:ci-superuser@localhost:5432/daelys
+      DAELYS_APP_PASSWORD: ci-app-role
+      APP_DATABASE_URL: postgresql+asyncpg://daelys_app:ci-app-role@localhost:5432/daelys
+      REDIS_URL: redis://localhost:6379/0
+      JWT_SECRET: ci-only-jwt-secret-not-used-anywhere-else-000
+      SMTP_HOST: localhost
+      SMTP_PORT: "1025"
+      MAILPIT_UI_HOST_PORT: "8025"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-dev.lock
+      - run: pip install -r requirements-dev.lock
+      - run: make lint
+      - run: make test RUN= PYTEST_ADDOPTS="-rA"
+      - run: make migrate RUN=
+      # Safety gate: any failing case exits non-zero and fails the build.
+      - run: make bench SUITE=safety RUN=

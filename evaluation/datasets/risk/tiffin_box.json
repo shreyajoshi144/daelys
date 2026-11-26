@@ -1,0 +1,11 @@
+{
+  "draft": true,
+  "scenario": "tiffin_box",
+  "timelines": ["week1", "week2"],
+  "days": 12,
+  "labels": [
+    {"item": "gh:tiffin-box/tiffin-box-app#12", "day": 7, "causes": ["ci.completed", "blocker.mentioned"]},
+    {"item": "gh:tiffin-box/tiffin-box-app#14", "day": 9, "causes": ["ci.completed"]},
+    {"item": "gh:tiffin-box/tiffin-box-app#17", "day": 10, "causes": ["blocker.mentioned"]}
+  ]
+}

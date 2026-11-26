@@ -1,0 +1,498 @@
+{
+  "draft": true,
+  "week_start": "2026-03-02T00:00:00+05:30",
+  "events": [
+    {
+      "id": "w1-01",
+      "day": 0,
+      "time": "09:30",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#12",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Subscription checkout (plans + Razorpay)",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "arjun-mehta-dev",
+          "due_at": "2026-03-13T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/12"
+        }
+      }
+    },
+    {
+      "id": "w1-02",
+      "day": 0,
+      "time": "09:35",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#13",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Delivery slot picker",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "kavya-codes",
+          "due_at": "2026-03-12T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/13"
+        }
+      }
+    },
+    {
+      "id": "w1-03",
+      "day": 0,
+      "time": "09:40",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#14",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Out-for-delivery push notifications",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "vik-builds",
+          "due_at": "2026-03-16T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/14"
+        }
+      }
+    },
+    {
+      "id": "w1-04",
+      "day": 0,
+      "time": "09:45",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#15",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Kitchen admin: weekly menu CSV import",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": null,
+          "due_at": "2026-03-18T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/15"
+        }
+      }
+    },
+    {
+      "id": "w1-05",
+      "day": 0,
+      "time": "10:00",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "priya",
+      "subject": "gh:tiffin-box/tiffin-box-app#16",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Pricing page copy",
+          "status": "open",
+          "lane": "Marketing",
+          "owner_login": null,
+          "due_at": "2026-03-11T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/16"
+        }
+      }
+    },
+    {
+      "id": "w1-06",
+      "day": 0,
+      "time": "10:05",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "priya",
+      "subject": "gh:tiffin-box/tiffin-box-app#17",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Launch email sequence",
+          "status": "open",
+          "lane": "Marketing",
+          "owner_login": null,
+          "due_at": "2026-03-17T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/17"
+        }
+      }
+    },
+    {
+      "id": "w1-07",
+      "day": 0,
+      "time": "10:10",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#18",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Onboarding survey spec",
+          "status": "open",
+          "lane": "Product",
+          "owner_login": null,
+          "due_at": "2026-03-10T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/18"
+        }
+      }
+    },
+    {
+      "id": "w1-08",
+      "day": 0,
+      "time": "10:15",
+      "source": "github",
+      "type": "issue.opened",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#19",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Referral program rules",
+          "status": "open",
+          "lane": "Product",
+          "owner_login": null,
+          "due_at": "2026-03-16T18:00:00+05:30",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/issues/19"
+        }
+      }
+    },
+    {
+      "id": "w1-09",
+      "day": 0,
+      "time": "11:00",
+      "source": "calendar",
+      "type": "calendar.event_scheduled",
+      "payload": {
+        "title": "Weekly launch sync",
+        "starts_at": "2026-03-02T16:00:00+05:30"
+      }
+    },
+    {
+      "id": "w1-10",
+      "day": 0,
+      "time": "15:20",
+      "source": "github",
+      "type": "issue.commented",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#12",
+      "payload": {
+        "fields": {
+          "kind": "issue"
+        },
+        "body": "Need Razorpay sandbox keys from finance before I can test payments."
+      }
+    },
+    {
+      "id": "w1-11",
+      "day": 1,
+      "time": "10:10",
+      "source": "github",
+      "type": "pr.opened",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "title": "Subscription checkout: plan selection + payment",
+          "status": "in_review",
+          "owner_login": "arjun-mehta-dev",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/pull/21"
+        },
+        "links": [
+          "gh:tiffin-box/tiffin-box-app#12"
+        ],
+        "body": "Closes #12"
+      }
+    },
+    {
+      "id": "w1-12",
+      "day": 1,
+      "time": "10:12",
+      "source": "github",
+      "type": "ci.created",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "pending"
+        }
+      }
+    },
+    {
+      "id": "w1-13",
+      "day": 1,
+      "time": "10:25",
+      "source": "github",
+      "type": "ci.completed",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "success"
+        }
+      }
+    },
+    {
+      "id": "w1-14",
+      "day": 1,
+      "time": "14:00",
+      "source": "github",
+      "type": "pr.opened",
+      "actor": "kavya-codes",
+      "subject": "gh:tiffin-box/tiffin-box-app#22",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "title": "Delivery slot picker",
+          "status": "in_progress",
+          "owner_login": "kavya-codes",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/pull/22"
+        },
+        "links": [
+          "gh:tiffin-box/tiffin-box-app#13"
+        ],
+        "body": "Fixes #13"
+      }
+    },
+    {
+      "id": "w1-15",
+      "day": 1,
+      "time": "16:30",
+      "source": "github",
+      "type": "issue.assigned",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#15",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "owner_login": "kavya-codes"
+        }
+      }
+    },
+    {
+      "id": "w1-16",
+      "day": 2,
+      "time": "09:50",
+      "source": "github",
+      "type": "issue.commented",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#18",
+      "payload": {
+        "fields": {
+          "kind": "issue"
+        },
+        "body": "Survey draft shared with Ananya for review."
+      }
+    },
+    {
+      "id": "w1-17",
+      "day": 2,
+      "time": "11:15",
+      "source": "github",
+      "type": "pr.ready_for_review",
+      "actor": "kavya-codes",
+      "subject": "gh:tiffin-box/tiffin-box-app#22",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "status": "in_review"
+        }
+      }
+    },
+    {
+      "id": "w1-18",
+      "day": 2,
+      "time": "11:16",
+      "source": "github",
+      "type": "ci.created",
+      "subject": "gh:tiffin-box/tiffin-box-app#22",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "pending"
+        }
+      }
+    },
+    {
+      "id": "w1-19",
+      "day": 2,
+      "time": "11:30",
+      "source": "github",
+      "type": "ci.completed",
+      "subject": "gh:tiffin-box/tiffin-box-app#22",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "success"
+        }
+      }
+    },
+    {
+      "id": "w1-20",
+      "day": 2,
+      "time": "15:00",
+      "source": "github",
+      "type": "pr.commented",
+      "actor": "kavya-codes",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        },
+        "body": "Can we split plan selection from payment? Easier to review."
+      }
+    },
+    {
+      "id": "w1-21",
+      "day": 3,
+      "time": "10:00",
+      "source": "github",
+      "type": "pr.synchronize",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        }
+      }
+    },
+    {
+      "id": "w1-22",
+      "day": 3,
+      "time": "10:02",
+      "source": "github",
+      "type": "ci.created",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "pending"
+        }
+      }
+    },
+    {
+      "id": "w1-23",
+      "day": 3,
+      "time": "10:20",
+      "source": "github",
+      "type": "ci.completed",
+      "subject": "gh:tiffin-box/tiffin-box-app#21",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "ci_checks.test": "success"
+        }
+      }
+    },
+    {
+      "id": "w1-24",
+      "day": 3,
+      "time": "12:00",
+      "source": "github",
+      "type": "pr.merged",
+      "actor": "arjun-mehta-dev",
+      "subject": "gh:tiffin-box/tiffin-box-app#22",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "w1-25",
+      "day": 3,
+      "time": "12:01",
+      "source": "github",
+      "type": "issue.closed",
+      "actor": "kavya-codes",
+      "subject": "gh:tiffin-box/tiffin-box-app#13",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "w1-26",
+      "day": 3,
+      "time": "16:00",
+      "source": "calendar",
+      "type": "calendar.event_scheduled",
+      "payload": {
+        "title": "Pricing review with founders",
+        "starts_at": "2026-03-06T11:00:00+05:30"
+      }
+    },
+    {
+      "id": "w1-27",
+      "day": 4,
+      "time": "10:30",
+      "source": "github",
+      "type": "issue.closed",
+      "actor": "rohan",
+      "subject": "gh:tiffin-box/tiffin-box-app#18",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "w1-28",
+      "day": 4,
+      "time": "11:00",
+      "source": "github",
+      "type": "issue.commented",
+      "actor": "priya",
+      "subject": "gh:tiffin-box/tiffin-box-app#16",
+      "payload": {
+        "fields": {
+          "kind": "issue"
+        },
+        "body": "Draft v1 ready, waiting on final price points."
+      }
+    },
+    {
+      "id": "w1-29",
+      "day": 4,
+      "time": "15:45",
+      "source": "github",
+      "type": "pr.opened",
+      "actor": "vik-builds",
+      "subject": "gh:tiffin-box/tiffin-box-app#23",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "title": "Push notification service skeleton",
+          "status": "in_progress",
+          "owner_login": "vik-builds",
+          "url": "https://github.com/tiffin-box/tiffin-box-app/pull/23"
+        },
+        "links": [
+          "gh:tiffin-box/tiffin-box-app#14"
+        ],
+        "body": "Part of #14. Closes #14 once APNs works."
+      }
+    },
+    {
+      "id": "w1-30",
+      "day": 4,
+      "time": "17:30",
+      "source": "calendar",
+      "type": "calendar.event_scheduled",
+      "payload": {
+        "title": "Launch go/no-go",
+        "starts_at": "2026-03-13T17:00:00+05:30"
+      }
+    }
+  ]
+}

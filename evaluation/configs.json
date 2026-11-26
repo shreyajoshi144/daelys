@@ -1,0 +1,4 @@
+{
+  "opus-5.5": "anthropic:claude-opus-5-5",
+  "sonnet-5.5": "anthropic:claude-sonnet-5-5"
+}

@@ -1,0 +1,38 @@
+{
+  "draft": true,
+  "scenario": "risk_diamond",
+  "timelines": [
+    "main"
+  ],
+  "days": 9,
+  "labels": [
+    {
+      "item": "task:diamond:web",
+      "day": 2,
+      "causes": [
+        "plan.item_created"
+      ]
+    },
+    {
+      "item": "task:diamond:app",
+      "day": 2,
+      "causes": [
+        "plan.item_created"
+      ]
+    },
+    {
+      "item": "task:diamond:api",
+      "day": 4,
+      "causes": [
+        "plan.item_created"
+      ]
+    },
+    {
+      "item": "task:diamond:launch",
+      "day": 5,
+      "causes": [
+        "plan.item_created"
+      ]
+    }
+  ]
+}

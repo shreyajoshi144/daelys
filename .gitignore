@@ -1,0 +1,36 @@
+# Secrets: never commit. Copy .env.example to .env and fill it in.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Tool caches and reports
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Model weights downloaded by the audio stack (Whisper), and the empty default Notiv mount
+.hf/
+.notiv/
+
+# Local editor / OS / agent state
+.DS_Store
+.idea/
+.vscode/
+.claude/
+*.log
+
+evaluation/results/run-*.json

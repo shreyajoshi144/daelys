@@ -1,0 +1,15 @@
+{
+  "draft": true,
+  "pairs": [
+    {"a": "Write the launch FAQ page", "b": "Write launch FAQ page", "duplicate": true},
+    {"a": "Build delivery slot picker", "b": "Delivery slot picker UI", "duplicate": true},
+    {"a": "Set up Razorpay sandbox keys", "b": "Get Razorpay sandbox keys from finance", "duplicate": true},
+    {"a": "Push notifications for dispatch", "b": "Out-for-delivery push notifications", "duplicate": true},
+    {"a": "Write the launch FAQ page", "b": "Write the pricing FAQ page", "duplicate": false},
+    {"a": "Launch email sequence", "b": "Launch email for referral program", "duplicate": false},
+    {"a": "Menu CSV import for kitchen admins", "b": "Menu CSV export for finance", "duplicate": false},
+    {"a": "Onboarding survey spec", "b": "Onboarding survey results analysis", "duplicate": false},
+    {"a": "Pricing page copy", "b": "Pricing page design", "duplicate": false},
+    {"a": "iOS push notification certificate", "b": "Android push notification setup", "duplicate": false}
+  ]
+}

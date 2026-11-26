@@ -1,0 +1,153 @@
+{
+  "draft": true,
+  "week_start": "2026-04-06T00:00:00+05:30",
+  "events": [
+    {
+      "id": "d-01",
+      "day": 0,
+      "time": "09:00",
+      "source": "plan",
+      "type": "plan.item_created",
+      "subject": "task:diamond:api",
+      "payload": {
+        "fields": {
+          "kind": "task",
+          "title": "Design pricing API",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "sam",
+          "due_at": "2026-04-08T18:00:00+05:30",
+          "estimate_days": 2
+        }
+      }
+    },
+    {
+      "id": "d-02",
+      "day": 0,
+      "time": "09:05",
+      "source": "plan",
+      "type": "plan.item_created",
+      "subject": "task:diamond:web",
+      "payload": {
+        "fields": {
+          "kind": "task",
+          "title": "Build pricing page",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "lee",
+          "due_at": "2026-04-11T18:00:00+05:30",
+          "estimate_days": 2
+        },
+        "depends_on": [
+          "task:diamond:api"
+        ]
+      }
+    },
+    {
+      "id": "d-03",
+      "day": 0,
+      "time": "09:10",
+      "source": "plan",
+      "type": "plan.item_created",
+      "subject": "task:diamond:app",
+      "payload": {
+        "fields": {
+          "kind": "task",
+          "title": "Show prices in app",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "kim",
+          "due_at": "2026-04-12T18:00:00+05:30",
+          "estimate_days": 2
+        },
+        "depends_on": [
+          "task:diamond:api"
+        ]
+      }
+    },
+    {
+      "id": "d-04",
+      "day": 0,
+      "time": "09:15",
+      "source": "plan",
+      "type": "plan.item_created",
+      "subject": "task:diamond:launch",
+      "payload": {
+        "fields": {
+          "kind": "task",
+          "title": "Announce new pricing",
+          "status": "open",
+          "lane": "Marketing",
+          "owner_login": "ash",
+          "due_at": "2026-04-14T18:00:00+05:30",
+          "estimate_days": 1
+        },
+        "depends_on": [
+          "task:diamond:web",
+          "task:diamond:app"
+        ]
+      }
+    },
+    {
+      "id": "d-05",
+      "day": 0,
+      "time": "09:20",
+      "source": "plan",
+      "type": "plan.item_created",
+      "subject": "task:diamond:faq",
+      "payload": {
+        "fields": {
+          "kind": "task",
+          "title": "Update pricing FAQ",
+          "status": "open",
+          "lane": "Marketing",
+          "owner_login": "ash",
+          "due_at": "2026-04-09T18:00:00+05:30",
+          "estimate_days": 1
+        }
+      }
+    },
+    {
+      "id": "d-06",
+      "day": 1,
+      "time": "11:00",
+      "source": "github",
+      "type": "issue.commented",
+      "subject": "task:diamond:api",
+      "payload": {
+        "fields": {
+          "kind": "task"
+        },
+        "body": "Still waiting on finance numbers."
+      }
+    },
+    {
+      "id": "d-07",
+      "day": 3,
+      "time": "10:00",
+      "source": "github",
+      "type": "issue.closed",
+      "subject": "task:diamond:faq",
+      "payload": {
+        "fields": {
+          "kind": "task",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "d-08",
+      "day": 4,
+      "time": "16:00",
+      "source": "github",
+      "type": "issue.commented",
+      "subject": "task:diamond:web",
+      "payload": {
+        "fields": {
+          "kind": "task"
+        },
+        "body": "Blocked until the API exists."
+      }
+    }
+  ]
+}

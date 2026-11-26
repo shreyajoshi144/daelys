@@ -1,0 +1,8 @@
+[00:02] Rohan: Let's review the referral program.
+[00:15] Ananya: Survey results say people prefer a free box over cash credit.
+[00:30] Rohan: Then the reward is one free box. Ananya, please update the referral rules doc by Tuesday.
+[00:44] Ananya: Okay.
+[00:52] Vikram: Push notifications are blocked on the APNs certificate.
+[01:03] Rohan: Vikram, ask Meera for the Apple account access tomorrow.
+[01:15] Sameer: Can marketing see the referral copy before launch?
+[01:22] Rohan: Priya will share the referral copy with Sameer on Monday.

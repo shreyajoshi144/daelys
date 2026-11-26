@@ -1,0 +1,294 @@
+{
+  "draft": true,
+  "week_start": "2026-04-06T00:00:00+05:30",
+  "events": [
+    {
+      "id": "q-01",
+      "day": 0,
+      "time": "09:00",
+      "source": "github",
+      "type": "issue.opened",
+      "subject": "gh:bench/quiet#1",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Export invoices as CSV",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "sam",
+          "due_at": "2026-04-12T18:00:00+05:30"
+        }
+      }
+    },
+    {
+      "id": "q-02",
+      "day": 0,
+      "time": "10:00",
+      "source": "github",
+      "type": "pr.opened",
+      "subject": "gh:bench/quiet#2",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "title": "CSV invoice export",
+          "status": "in_review",
+          "owner_login": "sam"
+        },
+        "links": [
+          "gh:bench/quiet#1"
+        ]
+      },
+      "actor": "sam"
+    },
+    {
+      "id": "q-03",
+      "day": 0,
+      "time": "09:30",
+      "source": "github",
+      "type": "issue.opened",
+      "subject": "gh:bench/quiet#3",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Invoice email template",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "lee",
+          "due_at": "2026-04-12T18:00:00+05:30"
+        }
+      }
+    },
+    {
+      "id": "q-04",
+      "day": 0,
+      "time": "11:00",
+      "source": "github",
+      "type": "pr.opened",
+      "subject": "gh:bench/quiet#4",
+      "payload": {
+        "fields": {
+          "kind": "pr",
+          "title": "Invoice email template",
+          "status": "in_review",
+          "owner_login": "lee"
+        },
+        "links": [
+          "gh:bench/quiet#3"
+        ]
+      },
+      "actor": "lee"
+    },
+    {
+      "id": "q-11",
+      "day": 1,
+      "time": "12:00",
+      "source": "github",
+      "type": "pr.synchronize",
+      "subject": "gh:bench/quiet#4",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        }
+      },
+      "actor": "lee"
+    },
+    {
+      "id": "q-12",
+      "day": 2,
+      "time": "12:00",
+      "source": "github",
+      "type": "pr.synchronize",
+      "subject": "gh:bench/quiet#4",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        }
+      },
+      "actor": "lee"
+    },
+    {
+      "id": "q-13",
+      "day": 3,
+      "time": "12:00",
+      "source": "github",
+      "type": "pr.synchronize",
+      "subject": "gh:bench/quiet#4",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        }
+      },
+      "actor": "lee"
+    },
+    {
+      "id": "q-14",
+      "day": 4,
+      "time": "12:00",
+      "source": "github",
+      "type": "pr.synchronize",
+      "subject": "gh:bench/quiet#4",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        }
+      },
+      "actor": "lee"
+    },
+    {
+      "id": "q-15",
+      "day": 5,
+      "time": "12:00",
+      "source": "github",
+      "type": "pr.synchronize",
+      "subject": "gh:bench/quiet#4",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        }
+      },
+      "actor": "lee"
+    },
+    {
+      "id": "q-16",
+      "day": 6,
+      "time": "12:00",
+      "source": "github",
+      "type": "pr.synchronize",
+      "subject": "gh:bench/quiet#4",
+      "payload": {
+        "fields": {
+          "kind": "pr"
+        }
+      },
+      "actor": "lee"
+    },
+    {
+      "id": "q-25",
+      "day": 0,
+      "time": "12:00",
+      "source": "github",
+      "type": "issue.opened",
+      "subject": "gh:bench/quiet#5",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Small fix 5",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "kai",
+          "due_at": "2026-04-09T18:00:00+05:30"
+        }
+      }
+    },
+    {
+      "id": "q-26",
+      "day": 0,
+      "time": "12:00",
+      "source": "github",
+      "type": "issue.opened",
+      "subject": "gh:bench/quiet#6",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Small fix 6",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "kai",
+          "due_at": "2026-04-10T18:00:00+05:30"
+        }
+      }
+    },
+    {
+      "id": "q-27",
+      "day": 0,
+      "time": "12:00",
+      "source": "github",
+      "type": "issue.opened",
+      "subject": "gh:bench/quiet#7",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Small fix 7",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "kai",
+          "due_at": "2026-04-11T18:00:00+05:30"
+        }
+      }
+    },
+    {
+      "id": "q-28",
+      "day": 0,
+      "time": "12:00",
+      "source": "github",
+      "type": "issue.opened",
+      "subject": "gh:bench/quiet#8",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "title": "Small fix 8",
+          "status": "open",
+          "lane": "Engineering",
+          "owner_login": "kai",
+          "due_at": "2026-04-12T18:00:00+05:30"
+        }
+      }
+    },
+    {
+      "id": "q-35",
+      "day": 3,
+      "time": "10:00",
+      "source": "github",
+      "type": "issue.closed",
+      "subject": "gh:bench/quiet#5",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "q-36",
+      "day": 4,
+      "time": "10:00",
+      "source": "github",
+      "type": "issue.closed",
+      "subject": "gh:bench/quiet#6",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "q-37",
+      "day": 5,
+      "time": "10:00",
+      "source": "github",
+      "type": "issue.closed",
+      "subject": "gh:bench/quiet#7",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "status": "done"
+        }
+      }
+    },
+    {
+      "id": "q-38",
+      "day": 6,
+      "time": "10:00",
+      "source": "github",
+      "type": "issue.closed",
+      "subject": "gh:bench/quiet#8",
+      "payload": {
+        "fields": {
+          "kind": "issue",
+          "status": "done"
+        }
+      }
+    }
+  ]
+}

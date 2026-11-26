@@ -1,0 +1,9 @@
+{
+  "draft": true,
+  "scenario": "risk_quiet_pr",
+  "timelines": ["main"],
+  "days": 7,
+  "labels": [
+    {"item": "gh:bench/quiet#1", "day": 4, "causes": ["pr.opened"]}
+  ]
+}

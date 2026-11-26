@@ -1,0 +1,76 @@
+name: daelys
+
+x-app: &app
+  image: daelys-app:local
+  build:
+    context: .
+    args:  # local images: test tooling + the audio stack (production images leave both out)
+      INSTALL_DEV: "true"
+      INSTALL_MEETINGS: "${INSTALL_MEETINGS:-true}"
+  env_file: .env
+  restart: unless-stopped
+  environment:
+    DATABASE_URL: postgresql+asyncpg://postgres:${POSTGRES_PASSWORD}@postgres:5432/daelys
+    APP_DATABASE_URL: postgresql+asyncpg://daelys_app:${DAELYS_APP_PASSWORD}@postgres:5432/daelys
+    REDIS_URL: redis://redis:6379/0
+    SMTP_HOST: mailpit
+    SMTP_PORT: "1025"
+    NOTIV_PATH: /notiv
+  volumes:
+    # Notiv's code, read-only (its transcription is used as a library), and a cache for Whisper weights.
+    # Unset = an empty, git-ignored ./.notiv (audio upload then answers 503 not_configured).
+    - ${NOTIV_HOST_PATH:-./.notiv}:/notiv:ro
+    - whisper-models:/app/.hf
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: daelys
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    ports: ["127.0.0.1:${PG_HOST_PORT:-5432}:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d daelys"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports: ["127.0.0.1:${REDIS_HOST_PORT:-6379}:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  mailpit:
+    image: axllent/mailpit:v1.27
+    restart: unless-stopped
+    ports: ["127.0.0.1:${MAILPIT_SMTP_HOST_PORT:-1025}:1025", "127.0.0.1:${MAILPIT_UI_HOST_PORT:-8025}:8025"]
+
+  api:
+    <<: *app
+    command: ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--proxy-headers"]
+    ports: ["127.0.0.1:${API_HOST_PORT:-8000}:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  worker:
+    <<: *app
+    command: ["arq", "workers.main.WorkerSettings"]
+
+volumes:
+  pgdata:
+  whisper-models:

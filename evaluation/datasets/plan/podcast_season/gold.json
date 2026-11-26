@@ -1,0 +1,19 @@
+{
+  "draft": true,
+  "items": [
+    {"title": "Book 8 guests", "lane": "Product"},
+    {"title": "Set up new editing workflow", "lane": "Engineering"},
+    {"title": "Record and edit episodes", "lane": "Product"},
+    {"title": "Create cover art and trailer", "lane": "Marketing"},
+    {"title": "Release trailer", "lane": "Marketing"},
+    {"title": "Build episode pages with transcripts", "lane": "Engineering"},
+    {"title": "Newsletter and LinkedIn promotion", "lane": "Marketing"},
+    {"title": "Create sponsor deck", "lane": "Marketing"}
+  ],
+  "dependencies": [
+    ["Record and edit episodes", "Book 8 guests"],
+    ["Record and edit episodes", "Set up new editing workflow"],
+    ["Release trailer", "Create cover art and trailer"]
+  ],
+  "contradiction": {"quotes": ["Budget is ₹1.5L total", "the season budget is ₹2L"]}
+}

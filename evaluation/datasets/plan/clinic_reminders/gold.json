@@ -1,0 +1,19 @@
+{
+  "draft": true,
+  "items": [
+    {"title": "Integrate booking system appointment export", "lane": "Engineering"},
+    {"title": "Set up WhatsApp Business API and get templates approved", "lane": "Engineering"},
+    {"title": "Build reminder scheduler and reply handling", "lane": "Engineering"},
+    {"title": "Build reschedule flow", "lane": "Engineering"},
+    {"title": "Front-desk confirmations dashboard", "lane": "Engineering"},
+    {"title": "Consent flow and legal review of consent text", "lane": "Product"},
+    {"title": "Clinic poster and counter card", "lane": "Marketing"},
+    {"title": "Measure no-show rate before and after", "lane": "Product"}
+  ],
+  "dependencies": [
+    ["Build reminder scheduler and reply handling", "Integrate booking system appointment export"],
+    ["Build reminder scheduler and reply handling", "Set up WhatsApp Business API and get templates approved"],
+    ["Build reschedule flow", "Build reminder scheduler and reply handling"]
+  ],
+  "contradiction": {"quotes": ["Pilot in 3 clinics first", "in the 5 pilot clinics"]}
+}

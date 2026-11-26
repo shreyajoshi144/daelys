@@ -1,0 +1,8 @@
+[00:01] Meera: Chalo, quick standup karte hain.
+[00:10] Arjun: Checkout ke tests abhi bhi fail ho rahe hain, sandbox keys expire ho gayi.
+[00:24] Meera: Arjun, finance se nayi keys le lo, Friday tak please.
+[00:33] Arjun: Haan, aaj hi follow up karta hoon.
+[00:45] Priya: FAQ page ka kya? Koi likh raha hai?
+[00:52] Neha: Main likh dungi, Thursday tak ho jayega.
+[01:05] Vikram: Push notifications ke liye APNs certificate chahiye, Meera ke paas Apple account hai.
+[01:16] Meera: Theek hai, main kal tak certificate bhej dungi.

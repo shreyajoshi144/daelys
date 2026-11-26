@@ -1,0 +1,10 @@
+{
+  "draft": true,
+  "language": "en",
+  "meeting_date": "2026-03-12",
+  "action_items": [
+    {"text": "Update the referral rules doc", "owner": "Ananya", "due_date": "2026-03-17"},
+    {"text": "Ask Meera for Apple account access", "owner": "Vikram", "due_date": "2026-03-13"},
+    {"text": "Share the referral copy with Sameer", "owner": "Priya", "due_date": "2026-03-16"}
+  ]
+}

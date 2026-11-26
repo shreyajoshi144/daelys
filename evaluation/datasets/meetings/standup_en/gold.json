@@ -1,0 +1,10 @@
+{
+  "draft": true,
+  "language": "en",
+  "meeting_date": "2026-03-09",
+  "action_items": [
+    {"text": "Get new Razorpay sandbox keys from finance", "owner": "Arjun", "due_date": "2026-03-13"},
+    {"text": "Build the menu CSV import", "owner": "Kavya", "due_date": "2026-03-18"},
+    {"text": "Write the launch FAQ page", "owner": "Neha", "due_date": "2026-03-12"}
+  ]
+}
